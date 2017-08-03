@@ -25,7 +25,7 @@ body {
     height: auto; 
     }
     
-    .photo1, .photo2, .photo3 {
+    .photo1 /*, .photo2, .photo3*/{
         position: relative;
         padding: 0;
         background-attachment: fixed;
@@ -34,12 +34,13 @@ body {
         background-size: cover;
     }
     
-   /* .photo2, .photo3 {
+    .photo2, .photo3 {
         position: relative;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }*/
+    }
+    
     .photo1 {
         background-image: url('2016 Wire Trees.png');
         min-height: 500px;
@@ -53,6 +54,80 @@ body {
         background-image: url('Crayon Art.jpg');
         min-height: 600px;
     }
+    
+    figure {
+        margin: 0;
+        position: relative;
+    }
+    
+    figure img {
+        display: block;
+        position: relative;
+        z-index: 10;
+        max-width: 100%
+        height: auto;
+    }
+    
+    figure figcaption {
+        display: block;
+        position: absolute:
+            z-index: 5;
+    }
+    
+    figure h3 {
+        color: #ED0000;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    figure span {
+        color: #ED0000;
+        display: block;
+        line-height: 1.2;
+    }
+    
+    figure a.close-caption {
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fffff5;
+    }
+    
+    figure a.close-caption.hidden {
+        display: none
+    }
+    
+    #effect-1 a.close-caption {
+    bottom: 10px;
+    right: 10px;
+}
+    
+#effect-1 figure {
+    background-color: #fffff5;
+}
+    
+#effect-1 figcaption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+    
+#effect-1 figure img {
+    transition: all 0.3s;
+}
+    
+.no-touch #effect-1 figure:hover img,
+#effect-1 figure.hover img {
+    transform: translateY(-90px);
+}
  
 </style>
 </head>
@@ -73,12 +148,6 @@ body {
     <div class="photo1">
     </div>
     
-    <div style="position:relative;">
-      <div style="color: #fffff5; background-color: #fffff5; text-align: center; height: .1px; text-align: justify;">
-        <p></p>
-    </div>
-    </div>
-    
     <div style="height: 250px; padding: 10px; color: #fffff5; background-color: #2E294E; font-size: 20px">
          <h1 style="text-align:center;"><b>About Us</b></h1>
          <p style="text-align:center;">
@@ -89,9 +158,17 @@ body {
             Featured on this website are some of our previous projects. Feel free to browse through our collection!</p>
     </div>
     
-    
     <div class="photo2">
     </div>
+    
+    <figure>
+        <img src="Coloring Books.jpg" alt="">
+        <figcaption>
+            <h3>Coloring Books</h3?
+            <span>6/17/16</span>
+            <a href="#" class="close-caption hidden">x</a>
+        </figcaption>
+    </figure>
     
     <div style="position:relative;">
       <div style="color: #ED0000; background-color: #ED0000; text-align: center; padding: 10px 20px; text-align: justify;">
