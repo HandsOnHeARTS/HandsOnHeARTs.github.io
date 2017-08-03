@@ -17,17 +17,28 @@ body {
     height: 100%;
     }
     
-.parallax {
-    /*Change the string between the ' ' to change image. Must refer to an image uploaded to HoH github. Copy the file's name exactly.*/
-    background-image: url('2016 Wire Trees.png');
-    height: 70%; 
-
-    /*background-attachment must be set to "fixed" in order to achieve parallax effect*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .photo1, /*.photo2, .photo3*/ {
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+    .photo1 {
+        background-image: url('2016 Wire Trees.png');
+        min-height: 100%;
+    }
+    /*
+    .photo2 {
+        background-image: url('');
+        min-height: 800px;
+    }
+    .photo3 {
+        background-image: url('');
+        min-height: 800px;
+    }
+    */
+    
 
 </style>
 </head>
@@ -40,20 +51,14 @@ body {
         </h1>
     </div>
     
-<div class="parallax"></div>
 <div style="height:300px;padding:50px;background-color:white;font-size:20px">
     <h1 style="text-align:center;"><b>About Us</b></h1>
-    <p style="text-align:center;">The Hands on HeARTs club dedicates time to exploring various art forms. 
+    <p style="text-align:center;">The Hands on HeARTs club dedicates time to exploring various art forms. <br />
         We aspire to create art with a purpose, whether that means volunteering our services to other clubs, 
         collaborating art projects with outside organizations, or providing members an hour of fun. <br /><br /> 
     
     Featured on this website are some of our previous projects. Feel free to browse through our collection!</p>
 </div>
-    
-<div class = "parallax"></div>
-    
-  
-    
 
 </body>
 </html>
