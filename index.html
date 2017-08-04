@@ -53,6 +53,69 @@ body {
         background-image: url('Crayon Art.jpg');
         min-height: 600px;
     }
+    
+    figure {
+    margin: 0;
+    position: relative;
+}
+figure img {
+    display: block;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    height: auto;
+}
+figure figcaption {
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+figure h3 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+figure span {
+    color: #b2cce1;
+    display: block;
+    line-height: 1.2;
+}
+figure a.close-caption {
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #315a7d;
+}
+figure a.close-caption.hidden {
+    display: none
+}
+#effect-1 a.close-caption {
+    bottom: 10px;
+    right: 10px;
+}
+#effect-1 figure {
+    background-color: red
+}
+#effect-1 figcaption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+#effect-1 figure img {
+    transition: all 0.3s;
+}
+.no-touch #effect-1 figure:hover img,
+#effect-1 figure.hover img {
+    transform: translateY(-90px);
+}
  
 </style>
 </head>
@@ -82,6 +145,14 @@ body {
     
             Featured on this website are some of our previous projects. Feel free to browse through our collection!</p>
     </div>
+    
+    <figure>
+        <img src="Garden Stakes.jpg" alt="">
+        <figcaption>
+            <h4>Collaboration with Nourishing Earth: Garden Stakes</h4>
+            <a href="#" class="close-caption hidden">x</a>
+        </figcaption>
+    </figure>
     
     <div class="photo2">
     </div>
