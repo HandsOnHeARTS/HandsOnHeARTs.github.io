@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='//fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
 <style>
     .header {
         position: absolute left;
     }    
 body {
-    font-family: 'Helvetica';font-size: 22px;
+    font-family: 'Helvetica';font-size: 20px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -53,6 +52,66 @@ body {
         background-image: url('Crayon Art.jpg');
         min-height: 600px;
     }
+    
+    figure {
+    margin: 0;
+    position: relative;
+    }
+    
+    figure img{
+        display: block;
+        position: relative;
+        z-index: 10;
+        max-width: 100%
+        min-height: 600px;
+    }
+    figure h3 {
+        color: black;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weighht: 700;
+        margin-bottom: 10px;
+    }
+    figure span{
+        color: red;
+        display: block;
+        line-height: 1.2;
+    }
+    figure a.close-caption {
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #315a7d;
+}
+figure a.close-caption.hidden {
+    display: none
+}
+    #effect-1 a.close-caption {
+    bottom: 10px;
+    right: 10px;
+}
+#effect-1 figure {
+    background-color: yellow;
+}
+#effect-1 figcaption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+#effect-1 figure img {
+    transition: all 0.3s;
+}
+
+#effect-1 figure.hover img {
+    transform: translateY(-90px);
+}
+    
  
 </style>
 </head>
@@ -82,6 +141,15 @@ body {
     
             Featured on this website are some of our previous projects. Feel free to browse through our collection!</p>
     </div>
+    
+    <figure>
+        <img src="Garden Stakes.jpg" alt="Garden Photo">
+        <figcaption>
+            <h3>Name of Project</h3>
+            <span>Month Year</span>
+            <!--<a href="#" class="close-caption hidden">x</a>-->
+        </figcaption>
+    </figure>
     
     <div class="photo2">
     </div>
