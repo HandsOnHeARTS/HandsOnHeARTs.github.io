@@ -54,7 +54,7 @@ body {
         min-height: 600px;
     }
     
-    figure {
+  figure {
     margin: 0;
     position: relative;
 }
@@ -70,12 +70,17 @@ figure figcaption {
     position: absolute;
     z-index: 5;
 }
-figure h4 {
+figure h3 {
     color: #fff;
     font-size: 22px;
     line-height: 1.2;
     font-weight: 700;
     margin-bottom: 10px;
+}
+figure span {
+    color: #b2cce1;
+    display: block;
+    line-height: 1.2;
 }
 figure a.close-caption {
     display: block;
@@ -96,7 +101,7 @@ figure a.close-caption.hidden {
     right: 10px;
 }
 #effect-1 figure {
-    background-color: red
+    background-color: steelblue
 }
 #effect-1 figcaption {
     bottom: 0;
@@ -107,7 +112,11 @@ figure a.close-caption.hidden {
 #effect-1 figure img {
     transition: all 0.3s;
 }
- 
+.no-touch #effect-1 figure:hover img,
+#effect-1 figure.hover img {
+    transform: translateY(-90px);
+}
+    
 </style>
 </head>
 <body>
@@ -137,13 +146,14 @@ figure a.close-caption.hidden {
             Featured on this website are some of our previous projects. Feel free to browse through our collection!</p>
     </div>
     
-    <figure>
-        <img src="Garden Stakes.jpg" alt="">
-        <figcaption>
-            <h4>Collaboration with Nourishing Earth: Garden Stakes</h4>
-            <a href="#" class="close-caption hidden">x</a>
-        </figcaption>
-    </figure>
+   <figure>
+    <img src="Garden Stakes.jpg" alt="">
+    <figcaption>
+        <h3>Image title</h3>
+        <span>Something random goes here</span>
+        <a href="#" class="close-caption hidden">x</a>
+    </figcaption>
+</figure>
     
     <div class="photo2">
     </div>
